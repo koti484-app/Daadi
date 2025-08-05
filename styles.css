@@ -1,0 +1,155 @@
+body {
+  background: linear-gradient(120deg, #23243a, #432874 120%);
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container {
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(40, 40, 60, 0.95);
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(25, 20, 80, 0.25);
+}
+
+.menu-container h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.menu-dropdown {
+  margin-bottom: 30px;
+}
+
+#menu-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4a48aa;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+#menu-options {
+  margin-top: 12px;
+  text-align: left;
+  padding: 12px;
+  background: #2a2750;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.mode-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mode-buttons button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #5b58c7;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mode-buttons button:hover {
+  background: #948fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px 32px 32px 32px;
+  border-radius: 18px;
+  background: rgba(28, 26, 44, 0.96);
+  box-shadow: 0 12px 40px rgba(33,17,70, 0.18);
+}
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+.info-options {
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#playerTurn {
+  font-size: 1.07rem;
+}
+#restart {
+  padding: 9px 22px;
+  font-size: 1rem;
+  background: #312d65;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(83,56,212, 0.14);
+  transition: background 0.15s;
+}
+#restart:hover {
+  background: #453cb4;
+}
+#game {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 29px auto 18px auto;
+}
+.board-line {
+  stroke: #b5b5ff;
+  stroke-width: 5px;
+}
+.spot {
+  cursor: pointer;
+  fill: #1e1445;
+  stroke: #ccc;
+  stroke-width: 2px;
+  transition: fill 0.2s, stroke-width 0.2s;
+}
+.spot:hover {
+  stroke-width: 4px;
+  fill: #4c4e87;
+}
+.piece {
+  stroke: #fff;
+  stroke-width: 2px;
+  transition: fill 0.17s, transform 0.13s;
+}
+.piece.white { fill: #fafaff; }
+.piece.black { fill: #ffb700; }
+.piece.selected {
+  filter: drop-shadow(0 0 7px #89e2ff) brightness(1.3);
+  transform: scale(1.12);
+}
+
+/* Back to Menu button styling */
+#backToMenu {
+  border-radius: 8px;
+  border: none;
+  background: #5b58c7;
+  color: white;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+#backToMenu:hover {
+  background: #948fff;
+}

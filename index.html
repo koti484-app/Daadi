@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nine Men's Morris - Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Nine Men's Morris</h1>
+    <div class="menu-dropdown">
+      <button id="menu-btn">Menu ▼</button>
+      <div id="menu-options" class="hidden">
+        <p>Select AI Difficulty:</p>
+        <label><input type="radio" name="difficulty" value="easy" checked> Easy</label><br />
+        <label><input type="radio" name="difficulty" value="medium"> Medium</label><br />
+        <label><input type="radio" name="difficulty" value="hard"> Hard</label>
+      </div>
+    </div>
+    <div class="mode-buttons">
+      <button id="play-ai">AI vs Player</button>
+      <button id="play-two">2 Player</button>
+    </div>
+  </div>
+  <script src="menu.js"></script>
+</body>
+</html>
